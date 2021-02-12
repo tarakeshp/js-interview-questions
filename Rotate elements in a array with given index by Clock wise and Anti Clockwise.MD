@@ -20,6 +20,10 @@
    `tmp = tmp + (arr[(2+i) % arr.length]); `      
 `}`   
 `console.log("close wise-2 %s", tmp); //cdefab`   
+### Clock wise Solution 3
+`tmp = arr.slice(2, arr.length).join('') + arr.slice(0,2).join('')`   
+`console.log("close wise-3 %s", tmp); //cdefab` 
+
 ### Anti-Clock wise Solution 1
 `tmp = "";`   
 `for(var i=arr.length; i > 0; i--) {`    
@@ -37,3 +41,6 @@
 `}`   
 
 `console.log("anti close wise-2 %s", tmp); //cbafed`  
+### Clock wise Solution 3
+`tmp = arr.slice(0, (2 + 1)).reverse().join('') + arr.slice((2 +1 ), arr.length).reverse().join('')`   
+`console.log("anti close wise-3 %s", tmp); //cdefab` 
